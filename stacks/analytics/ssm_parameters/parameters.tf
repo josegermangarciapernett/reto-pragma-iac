@@ -15,17 +15,17 @@ locals {
       parameters = {
         deslizamiento = {
           create      = true
-          name        = "/${var.prefix}/${terraform.workspace}/niif/deslizamiento"
+          name        = "/${var.prefix}/${terraform.workspace}/pragma/deslizamiento"
           description = "Parameters store to store data parameters"
         }
         gastos = {
           create      = true
-          name        = "/${var.prefix}/${terraform.workspace}/niif/gastos"
+          name        = "/${var.prefix}/${terraform.workspace}/pragma/gastos"
           description = "Parameters store to store data parameters"
         }
         tasa_fac_seg = {
           create      = true
-          name        = "/${var.prefix}/${terraform.workspace}/niif/tasa_fac_seg"
+          name        = "/${var.prefix}/${terraform.workspace}/pragma/tasa_fac_seg"
           description = "Parameters store to store data parameters"
         }
       }

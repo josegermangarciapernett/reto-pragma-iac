@@ -13,7 +13,7 @@ locals {
       # api_gateway Module
       #############################################################################
       create_api        = false
-      api_name          = "${var.prefix}-${terraform.workspace}-niif-api-gtw"
+      api_name          = "${var.prefix}-${terraform.workspace}-pragma-api-gtw"
       create_api_domain = false
       openapi_config    = null
       definition_path   = "${path.module}/datafiles/oas_dev.json"
@@ -41,7 +41,7 @@ locals {
       # api_wafv2 Module
       #############################################################################
       create_waf         = false
-      waf_name           = "${var.prefix}-${terraform.workspace}-niif-apigateway-waf"
+      waf_name           = "${var.prefix}-${terraform.workspace}-pragma-apigateway-waf"
       waf_scope          = "REGIONAL"
       waf_default_action = "allow"
       waf_visibility_config = {
@@ -165,17 +165,17 @@ locals {
 
       lambda_integrations = {
         post_login = {
-          name         = "niif-post-login"
+          name         = "pragma-post-login"
           api_resource = "/*/GET/post_login"
           statement_id = "post_login"
         }
         certify = {
-          name         = "niif-cerfication"
+          name         = "pragma-cerfication"
           api_resource = "/*/POST/certify"
           statement_id = "certify"
         }
         not_certify = {
-          name         = "niif-cerfication"
+          name         = "pragma-cerfication"
           api_resource = "/*/POST/not_certify"
           statement_id = "not_certify"
         }

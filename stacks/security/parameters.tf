@@ -13,41 +13,41 @@ locals {
       #############################################################################
       create_jdbc_secrets = false
       jdbc_secrets = {
-        alfaprd_dev = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfaprd-dev"
-          description             = "Secret to store JDBC connection data to alfaprd dev"
+        eccomerceprd_dev = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomerceprd-dev"
+          description             = "Secret to store JDBC connection data to eccomerceprd dev"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
-        alfaprd_qa = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfaprd-qa"
-          description             = "Secret to store JDBC connection data to alfaprd qa"
+        eccomerceprd_qa = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomerceprd-qa"
+          description             = "Secret to store JDBC connection data to eccomerceprd qa"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
-        alfaprd_cer = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfaprd-cer"
-          description             = "Secret to store JDBC connection data to alfaprd cer"
+        eccomerceprd_cer = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomerceprd-cer"
+          description             = "Secret to store JDBC connection data to eccomerceprd cer"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
-        ///new secret nuevos ambientes alfaprd-pre
-        alfaprd_pre = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfaprd-pre"
-          description             = "Secret to store JDBC connection data to alfaprd pre"
+        ///new secret nuevos ambientes eccomerceprd-pre
+        eccomerceprd_pre = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomerceprd-pre"
+          description             = "Secret to store JDBC connection data to eccomerceprd pre"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
-        /// end secret nuevos ambientes alfaprd-pre
-        alfacomp_dev = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfacomp-dev"
-          description             = "Secret to store JDBC connection data to alfacomp dev"
+        /// end secret nuevos ambientes eccomerceprd-pre
+        eccomercecomp_dev = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomercecomp-dev"
+          description             = "Secret to store JDBC connection data to eccomercecomp dev"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
-        alfacomp_qa = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfacomp-qa"
-          description             = "Secret to store JDBC connection data to alfacomp qa"
+        eccomercecomp_qa = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomercecomp-qa"
+          description             = "Secret to store JDBC connection data to eccomercecomp qa"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
@@ -183,44 +183,44 @@ locals {
       create_jdbc_secrets = true
 
       jdbc_secrets = {
-        alfaprd_dev = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfaprd-dev"
-          description             = "Secret to store JDBC connection data to alfaprd dev"
+        eccomerceprd_dev = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomerceprd-dev"
+          description             = "Secret to store JDBC connection data to eccomerceprd dev"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
-        alfaprd_qa = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfaprd-qa"
-          description             = "Secret to store JDBC connection data to alfaprd qa"
+        eccomerceprd_qa = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomerceprd-qa"
+          description             = "Secret to store JDBC connection data to eccomerceprd qa"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
-        alfaprd_cer = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfaprd-cer"
-          description             = "Secret to store JDBC connection data to alfaprd cer"
+        eccomerceprd_cer = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomerceprd-cer"
+          description             = "Secret to store JDBC connection data to eccomerceprd cer"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
-        alfacomp_dev = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfacomp-dev"
-          description             = "Secret to store JDBC connection data to alfacomp dev"
+        eccomercecomp_dev = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomercecomp-dev"
+          description             = "Secret to store JDBC connection data to eccomercecomp dev"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
-        alfacomp_qa = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfacomp-qa"
-          description             = "Secret to store JDBC connection data to alfacomp qa"
+        eccomercecomp_qa = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomercecomp-qa"
+          description             = "Secret to store JDBC connection data to eccomercecomp qa"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
-        ///new secret nuevos ambientes alfaprd-pre
-        alfaprd_pre = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfaprd-pre"
-          description             = "Secret to store JDBC connection data to alfaprd pre"
+        ///new secret nuevos ambientes eccomerceprd-pre
+        eccomerceprd_pre = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomerceprd-pre"
+          description             = "Secret to store JDBC connection data to eccomerceprd pre"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
-        /// end secret nuevos ambientes alfaprd-pre
+        /// end secret nuevos ambientes eccomerceprd-pre
       }
 
       clients = [
@@ -255,15 +255,15 @@ locals {
       create_jdbc_secrets = true
 
       jdbc_secrets = {
-        alfaprd_prd = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfaprd-prd"
-          description             = "Secret to store JDBC connection data to alfaprd prod"
+        eccomerceprd_prd = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomerceprd-prd"
+          description             = "Secret to store JDBC connection data to eccomerceprd prod"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }
-        alfacomp_prd = {
-          name                    = "/${var.prefix}/${terraform.workspace}/alfacomp-prd"
-          description             = "Secret to store JDBC connection data to alfacomp prod"
+        eccomercecomp_prd = {
+          name                    = "/${var.prefix}/${terraform.workspace}/eccomercecomp-prd"
+          description             = "Secret to store JDBC connection data to eccomercecomp prod"
           recovery_window_in_days = 30
           ignore_secret_changes   = true
         }

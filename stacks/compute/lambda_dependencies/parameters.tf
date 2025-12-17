@@ -15,17 +15,17 @@ locals {
       lambda_versions = {
         notification = {
           create      = true
-          name        = "/${var.prefix}/${terraform.workspace}/niif/lambda/version/notification"
+          name        = "/${var.prefix}/${terraform.workspace}/pragma/lambda/version/notification"
           description = "Parameters of the lambda Notification version"
         }
         post_login = {
           create      = true
-          name        = "/${var.prefix}/${terraform.workspace}/niif/lambda/version/post-login"
+          name        = "/${var.prefix}/${terraform.workspace}/pragma/lambda/version/post-login"
           description = "Parameters of the lambda Post Login version"
         }
         certification = {
           create      = true
-          name        = "/${var.prefix}/${terraform.workspace}/niif/lambda/version/certification"
+          name        = "/${var.prefix}/${terraform.workspace}/pragma/lambda/version/certification"
           description = "Parameters of the lambda Certification version"
         }
       }
@@ -35,15 +35,15 @@ locals {
       lambda_ecr = {
         notification = {
           create          = true
-          repository_name = "${var.prefix}_${terraform.workspace}_niif_notification"
+          repository_name = "${var.prefix}_${terraform.workspace}_pragma_notification"
         }
         post_login = {
           create          = true
-          repository_name = "${var.prefix}_${terraform.workspace}_niif_post_login"
+          repository_name = "${var.prefix}_${terraform.workspace}_pragma_post_login"
         }
         certification = {
           create          = true
-          repository_name = "${var.prefix}_${terraform.workspace}_niif_certification"
+          repository_name = "${var.prefix}_${terraform.workspace}_pragma_certification"
         }
       }
       image_tag_mutability          = "MUTABLE"
