@@ -1,0 +1,16 @@
+[
+   {
+     "unit_test":
+     [
+       {
+       "name": "Module",
+       "order": 0,
+       "path": "",
+         "type": "terratest"
+     }
+     ],
+     "integration_tests": [
+     ],
+     "manual_test": false
+  }
+]
